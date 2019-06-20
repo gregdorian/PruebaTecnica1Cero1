@@ -1,0 +1,50 @@
+﻿@model WebMVCPrueba.Models.MunicipioTramite
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MunicipioTramite</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Municipio.CodigoMunicipio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Municipio.CodigoMunicipio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Municipio.NombreMunicipio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Municipio.NombreMunicipio)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tramite.CodigoTramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tramite.CodigoTramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tramite.NombreTramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tramite.NombreTramite)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
